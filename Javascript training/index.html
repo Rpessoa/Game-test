@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="rpg.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- Google font -->
+
+<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="rpg.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+
+<title>Westhorns</title>
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+
+  <h1>RPG the battle!</h1>
+  <p>Fight!!!</p>
+  <br>
+
+<script>welcome()</script>
+
+<br><br>
+<div>
+<button type="button" class="btn btn-default" id="clickMe" onclick="rules();">Rules of the game</button>
+<br><br>
+
+<!-- Rules -->
+<div>
+<i><p id="rules"></p></i>
+<br>
+</div>
+</div>
+
+<!-- Hero Stats -->
+<div>
+<button type="button" class="btn btn-default" id="button-stats" onclick="heroStats();">Your Stats</button>
+<br><br>
+<div id="div-stats">
+<i><p id="stats1"></p></i>
+<i><p id="stats2"></p></i>
+<i><p id="stats3"></p></i>
+<i><p id="stats4"></p></i>
+<i><p id="stats5"></p></i>
+<br>
+</div>
+</div>
+
+<!-- start the game -->
+<div>
+<button type="button" class="btn btn-default" id="clickMe" onclick="dmgKill(dmgHero, dmgMonster);">Click to start!</button>
+<br><br>
+<div>
+  <strong><p id="hero-name"></p></strong>
+  <br>
+<i><p id="victory"></p></i>
+<br>
+</div>
+</div>
+
+
+
+
+
+</div>
+</body>
+</html>
