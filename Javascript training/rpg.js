@@ -15,14 +15,15 @@ function welcome() {
   document.writeln(welcomeMessage);
 };
 
+// Presents the rules of the game.
 function rules() {
   var rulesText = "Just click and play!";
-  //console.log(whichQuote);
+
   document.getElementById("rules").innerHTML = rulesText;
 
 };
 
-
+//Player's characteristics
 function Char(name, health, attack, damage, avatar) {
   this.name = name;
   this.health = health;
@@ -45,7 +46,7 @@ var dmgMonster = monster.damage;
 console.log(dmgHero);
 console.log(dmgMonster);
 
-// see stats
+// see player's stats in the HTML
 
 function heroStats() {
   document.getElementById("stats1").innerHTML = "Name: " + hero.name;
@@ -58,7 +59,7 @@ function heroStats() {
 
 var resultText = ", see your result below!";
 
-
+//Game engine - the combat
 function dmgKill(dmgHero, dmgMonster) {
   document.getElementById("hero-name").innerHTML = "Ok " + hero.name + resultText;
 
