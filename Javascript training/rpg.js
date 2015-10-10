@@ -7,7 +7,7 @@ next step: create while loop for damages
 var nameHero = prompt("Name your Hero: ");
 
 
-var welcomeMessage = "Hello <strong>" + nameHero + "</strong>, if you want to play, just click on the button below! <br>You will need to be strong to fight against our Goblin! He is very hungry and loves to eat heros in his breakfast!<br> Good luck!!!"
+var welcomeMessage = `Hello <strong>${nameHero}</strong>, if you want to play, just click on the button below! <br>You will need to be strong to fight against our Goblin! He is very hungry and loves to eat heros in his breakfast!<br> Good luck!!!`;
 
 
 
