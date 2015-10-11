@@ -1,10 +1,18 @@
-/* version 0.0.2
-next step: create while loop for damages
+/* version 0.0.3
+TODO
+create while loop for damages
+
 */
 
-
-
+var re = /^[a-zA-Z0-9]+$/g;
 var nameHero = prompt("Name your Hero: ");
+if (nameHero === null || nameHero === "") {
+  alert("try again!");
+  location.reload(true);
+} else if (!nameHero.match(re) || nameHero.length > 10) {
+  alert("Letters and/or numbers below 10 digitis only!");
+  location.reload(true);
+}
 
 
 var welcomeMessage = `Hello <strong>${nameHero}</strong>, if you want to play, just click on the button below! <br>You will need to be strong to fight against our Goblin! He is very hungry and loves to eat heros in his breakfast!<br> Good luck!!!`;
@@ -35,6 +43,7 @@ function Char(name, health, attack, damage, avatar) {
 
 var hero = new Char(nameHero, 100, 100);
 var monster = new Char("Goblin", 100, 100);
+
 
 hero.avatar = "<img src=http://vignette2.wikia.nocookie.net/lego/images/e/ec/HeroicKnight.jpg>";
 
