@@ -1,4 +1,4 @@
-# JavaScript Text RPG testing
+# JavaScript Text RPG Testing
 
 This is not and will not be a final RPG project. 
 This is only for training purpose.
